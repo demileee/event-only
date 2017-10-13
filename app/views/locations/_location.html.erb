@@ -1,0 +1,13 @@
+<% labels = [:name, :city, :description, :image] %>
+
+<%= form_for location do |f| %>
+  <% labels.each do |lab| %>
+    <p>
+      <%= f.label lab %>
+      <%= f.text_field lab %>
+    </p>
+  <% end %>
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
